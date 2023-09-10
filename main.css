@@ -93,6 +93,11 @@ div.hero h2 {
     margin: 20px;
 }
 
+body.high-contrast {
+    background-color: #000;
+    color: #fff;
+}
+
 @media screen and (min-width: 768px) {
     .container .div.text-box {
         margin: 10px;
