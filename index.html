@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="/pb/main.css">
 </head>
 <body>
-
-    <div class="menu">
+<!-- This is an A11y Change -->
+    <nav class="menu">
         <ul>
             <!-- This is an SEO change -->
             <li><a href="/pb/" title="Home page to tell briefly about the app">Homepage</a></li>
@@ -21,7 +21,7 @@
             <li><a href="/pb/login.html" title="Log in to access all the services">Login</a></li>
             <li><a href="https://google.com" title="Direct link to Google page">Google</a></li>
         </ul>
-    </div>
+    </nav>
 <!-- This is a Semantic HTML change -->
 <header>
     <div class="hero">
@@ -110,6 +110,17 @@
             </div>
         </div>
     </footer>
+
+    <button id="high-contrast-toggle">High Contrast Mode</button>
+    <script>
+        // JavaScript to toggle high contrast mode
+        const toggleButton = document.getElementById('high-contrast-toggle');
+        const body = document.body;
+
+        toggleButton.addEventListener('click', () => {
+            body.classList.toggle('high-contrast');
+        });
+    </script>
 
 </body>
 </html>

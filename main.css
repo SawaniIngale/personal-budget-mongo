@@ -57,6 +57,8 @@ div.hero h1 {
     color: #fff;
     font-size: 4.2em;
     margin-bottom: 20px;
+    /* This is an A11y change */
+    font-family: Arial, sans-serif;
 }
 
 div.hero h2 {
