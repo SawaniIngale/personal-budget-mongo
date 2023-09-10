@@ -102,6 +102,17 @@
         </section>
 
     </div>
+    <!-- This is an A11y Change -->
+    <button id="contrast-mode">High Contrast Mode</button>
+    <script>
+        // JavaScript to toggle high contrast mode
+        const tb = document.getElementById('contrast-mode');
+        const body = document.body;
+
+        tb.addEventListener('click', () => {
+            body.classList.toggle('high-contrast');
+        });
+    </script>
 <!--This is a Semantic HTML Change-->
     <footer>
         <div class="bottom">
@@ -110,17 +121,6 @@
             </div>
         </div>
     </footer>
-
-    <button id="high-contrast-toggle">High Contrast Mode</button>
-    <script>
-        // JavaScript to toggle high contrast mode
-        const toggleButton = document.getElementById('high-contrast-toggle');
-        const body = document.body;
-
-        toggleButton.addEventListener('click', () => {
-            body.classList.toggle('high-contrast');
-        });
-    </script>
 
 </body>
 </html>
