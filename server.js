@@ -11,8 +11,8 @@ app.get('/hello',(req, res) =>{
 });
 
 app.get('/budget',(req, res) => {
-    const data=require('./budget.json');
-    res.json(data);
+    const budget_data =require('./budget.json');
+    res.json(budget_data);
 })
 
 app.listen(port, () => {
